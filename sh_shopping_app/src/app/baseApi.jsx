@@ -7,8 +7,6 @@ export const baseApi = createApi({
     baseUrl: import.meta.env.VITE_BASE_URL,
     Credentials: 'include',
 }),
-    endpoints: () => ({
-        // Define your endpoints here
-    }),
-    tagTypes: ['User', 'Product', 'Cart', 'Order'], // Add your tag types here
+    endpoints: () => ({  }),
+    tagTypes: ['auth', 'Product', 'Cart', 'Order'], // Add your tag types here
 })
