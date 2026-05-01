@@ -1,5 +1,5 @@
 import { createContext,useContext } from "react"
-import { useGetMeQuery } from "./services/authApi"
+import { useGetMeQuery } from "./../features/auth/authApi"
 
 
 const AuthContext = createContext()

@@ -1,12 +1,24 @@
 
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Login from './features/auth/Login'
+import { AuthProvider } from './app/authProvider'
+
+
 function App() {
-<Router>
-  <Routes>
-  <Route path='/' element={<h1></h1>} />
-  </Routes>
-</Router>
+  
+  return (
+    
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path='/login' element={<Login />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
+  )
+  
+
 
 }
 
